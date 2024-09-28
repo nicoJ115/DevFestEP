@@ -1,10 +1,10 @@
 header {
     background-color: Purple; /* Green background */
-    padding: 40px 10%; /* Horizontal padding to prevent overflow */
+    padding: 20px 10%; /* Horizontal padding to prevent overflow */
     border-radius: 0 0 20px 20px; /* Rounded bottom corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for a bubbling effect */
     width: 100%; /* Ensure header covers the full width */
-    position: fixed; /* Make the header fixed at the top */
+    position: absolute; /* Make the header fixed at the top */
     top: 0; /* Align at the top */
     left: 0; /* Align at the left */
     z-index: 1000; /* Ensure it stays above other content */
