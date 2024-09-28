@@ -1,6 +1,6 @@
 header {
     background-color: Purple; /* Green background */
-    padding: 20px 10%; /* Horizontal padding to prevent overflow */
+    padding: 30px 10%; /* Horizontal padding to prevent overflow */
     border-radius: 0 0 20px 20px; /* Rounded bottom corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for a bubbling effect */
     width: 100%; /* Ensure header covers the full width */
