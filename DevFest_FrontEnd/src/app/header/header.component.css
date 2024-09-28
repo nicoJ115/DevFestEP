@@ -1,0 +1,52 @@
+header {
+    background-color: Purple; /* Green background */
+    padding: 40px 10%; /* Horizontal padding to prevent overflow */
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for a bubbling effect */
+    width: 100%; /* Ensure header covers the full width */
+    position: fixed; /* Make the header fixed at the top */
+    top: 0; /* Align at the top */
+    left: 0; /* Align at the left */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+  .header-content {
+    display: flex; /* Use flexbox to align title and nav */
+    justify-content: space-between; /* Space between header title and nav */
+    align-items: center; /* Center align items vertically */
+    max-width: 1200px; /* Optional: Set a max-width for better layout control */
+    margin: 0 auto; /* Center the content within the header */
+    width: 100%; /* Ensure full width */
+  }
+  
+  .header-title {
+    color: white; /* Header text color */
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Set the font size for the title */
+  }
+  
+  nav {
+    display: flex; /* Use flexbox for the nav */
+  }
+  
+  nav ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+  }
+  
+  nav li {
+    margin: 0 20px; /* Space between items, horizontally centered */
+  }
+  
+  nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
