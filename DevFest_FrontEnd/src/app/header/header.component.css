@@ -50,3 +50,9 @@ header {
     text-decoration: underline; /* Underline on hover */
   }
   
+  
+
+  .header-image {
+    width: 70px; /* Set desired width */
+    height: 65px; /* Set desired height */
+}

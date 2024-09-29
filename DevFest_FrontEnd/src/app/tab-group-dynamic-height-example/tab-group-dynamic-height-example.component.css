@@ -1,0 +1,7 @@
+.custom-tab-group {
+    width: 80%; 
+    margin: 0 auto; /* Center it */
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.2); /* Shadow effect */
+    border-radius: 8px; /* Optional: to soften the corners */
+    overflow: hidden; /* Optional: to prevent child elements from overflowing */
+  }

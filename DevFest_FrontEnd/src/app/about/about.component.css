@@ -1,3 +1,9 @@
+.centered-image {
+    display: block;       /* Change display to block */
+    margin: 0 auto;      /* Center the image horizontally */
+    max-width: 100%;     /* Make the image responsive */
+    height: auto;        /* Maintain aspect ratio */
+}
 .card-container {
     display: flex; /* Use flexbox for horizontal arrangement */
     justify-content: space-around; /* Space cards evenly */
@@ -5,7 +11,7 @@
   }
   
   .card {
-    width: 30%; /* Set the width of each card */
+    width: 40%; /* Set the width of each card */
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
     border: 2px solid black; /* Add a border with color (green in this case) */
     border-radius: 20px; /* Optional: Add rounded corners to the border */

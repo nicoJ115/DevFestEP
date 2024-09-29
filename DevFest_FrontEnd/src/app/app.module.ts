@@ -11,6 +11,13 @@ import { RoadMapMemberComponent } from './road-map-member/road-map-member.compon
 import { RoadMapFunderComponent } from './road-map-funder/road-map-funder.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { TabGroupDynamicHeightExampleComponent } from './tab-group-dynamic-height-example/tab-group-dynamic-height-example.component';
+import { AboutComponent } from './about/about.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -19,6 +26,12 @@ import { FormsModule } from '@angular/forms';
     LandingPageComponent,
     RoadMapMemberComponent,
     RoadMapFunderComponent,
+    SignUpComponent,
+    TabGroupDynamicHeightExampleComponent,
+    AboutComponent,
+   
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -26,6 +39,7 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     ReactiveFormsModule,
     FormsModule,
+    MatTabsModule,
   ],
   providers: [
     provideClientHydration(),

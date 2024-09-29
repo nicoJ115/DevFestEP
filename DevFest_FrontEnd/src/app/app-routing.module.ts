@@ -4,6 +4,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HeaderComponent } from './header/header.component';
 import { RoadMapFunderComponent } from './road-map-funder/road-map-funder.component';
 import { RoadMapMemberComponent } from './road-map-member/road-map-member.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { AboutComponent } from './about/about.component'; 
 
 const routes: Routes = [
 
@@ -19,6 +21,8 @@ const routes: Routes = [
     path: 'roadmap', 
     component: RoadMapFunderComponent
   },
+  { path: 'sign-up', component: SignUpComponent }, 
+  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({
