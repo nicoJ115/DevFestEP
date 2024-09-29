@@ -1,0 +1,30 @@
+<!-- funder.component.html -->
+<app-header></app-header>
+
+<br>
+<br> 
+
+<div class="members">
+    <h2>Members</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>In Bank</th>
+          <th>Financial Goal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let member of members">
+          <td>{{ member.user.first_name }} {{ member.user.last_name }}</td>
+          <td>{{ member.InBank | currency }}</td>
+          <td>{{ member.FinancialGoal | currency }}</td>
+          <td>
+            <button>Send Funds</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

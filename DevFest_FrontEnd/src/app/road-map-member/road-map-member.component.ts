@@ -11,11 +11,17 @@ export class RoadMapMemberComponent implements OnInit{
 
   constructor(private fb: FormBuilder) {
     this.financialForm = this.fb.group({
-      bankAccountBalance: ['', [Validators.required, Validators.min(0)]],
-      financialGoal: ['', [Validators.required, Validators.min(0)]],
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+      gmail: ['', [Validators.required, Validators.email]],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
       age: ['', [Validators.required, Validators.min(18)]],
-      profession: ['', Validators.required],
-      otherDetails: ['']
+      phoneNumber: ['', Validators.required],
+      address: ['', Validators.required],
+      // cardNumber: ['', Validators.required],
+      // cardExpirationDate: ['', Validators.required],
+      // cardCVC: ['', Validators.required]
     });
     
   }
@@ -23,24 +29,45 @@ export class RoadMapMemberComponent implements OnInit{
 
   ngOnInit(): void {}
 
-  onSubmit(form: any) {
-    console.log("Form Submitted!", form.value);
+  onSubmit() {
 
-    // You can now access the form values like this:
-    const bankAccountBalance = form.value.bankAccountBalance;
-    const financialGoal = form.value.financialGoal;
-    const age = form.value.age;
-    const profession = form.value.profession;
-    const otherDetails = form.value.otherDetails;
-    const collegeAttendance = form.value.collegeAttendance;
 
-    // Do something with these values, such as sending them to a server
-    console.log("Bank Account Balance:", bankAccountBalance);
-    console.log("Financial Goal:", financialGoal);
-    console.log("Age:", age);
-    console.log("Profession:", profession);
-    console.log("Other Details:", otherDetails);
-    console.log("College Attendance:", collegeAttendance);
+    if (this.financialForm.valid) {
+      console.log("Form Submitted!", this.financialForm.value);
+
+      // Access the form values
+      const { 
+        username, 
+        password, 
+        gmail, 
+        firstName, 
+        lastName, 
+        age, 
+        phoneNumber, 
+        address, 
+        cardNumber, 
+        cardExpirationDate, 
+        cardCVC 
+      } = this.financialForm.value;
+
+      // Log the values
+      console.log("Username:", username);
+      console.log("Password:", password);
+      console.log("Gmail:", gmail);
+      console.log("First Name:", firstName);
+      console.log("Last Name:", lastName);
+      console.log("Age:", age);
+      console.log("Phone Number:", phoneNumber);
+      console.log("Address:", address);
+      console.log("Card Number:", cardNumber);
+      console.log("Card Expiration Date:", cardExpirationDate);
+      console.log("Card CVC:", cardCVC);
+
+      // Optionally, navigate to another route
+      // this.router.navigate(['/roadmap']);
+    } else {
+      console.log("Form is invalid");
+    }
   }
 
 }

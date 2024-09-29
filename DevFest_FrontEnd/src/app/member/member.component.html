@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<br>
+<br>
+<!-- member.component.html -->
+<div class="collaborations">
+    <h2>Collaborations</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Funder Name</th>
+          <th>Amount</th>
+          <th>Details</th>
+          <th>Collaboration Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let collaboration of collaborations">
+          <td>{{ collaboration.funder }} </td>
+          <td>{{ collaboration.amount | currency }}</td>
+          <td>{{ collaboration.details }}</td>
+          <td>{{ collaboration.collaboration_date | date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

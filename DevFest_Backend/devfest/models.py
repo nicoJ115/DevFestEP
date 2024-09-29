@@ -25,7 +25,7 @@ class UserProfile(models.Model):
     
 
 class Member(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
 
     InBank = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
     FinancialGoal = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
@@ -37,20 +37,23 @@ class Member(models.Model):
     joined_date = models.DateField(default=timezone.now)
 
     def __str__(self):
-        name = self.user.first_name + ' ' + self.user.last_name
+        name = self.user.FirstName + ' ' + self.user.LastName
         return name
+
+   
+        
 
 
 
 class Funder(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
 
     InAccount = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
 
     funding_date = models.DateField(default=timezone.now)
 
     def __str__(self):
-        name = self.user.first_name + ' ' + self.user.last_name
+        name = self.user.FirstName + ' ' + self.user.LastName
         return name
 
 
@@ -66,4 +69,5 @@ class Collaborator(models.Model):
 
 
     def __str__(self):
-        return f"{self.member.name} - {self.funder.name}"
+        name = self.member.user.FirstName + ' ' + self.member.user.LastName +' - '+ self.member.user.FirstName + ' ' + self.member.user.LastName
+        return name

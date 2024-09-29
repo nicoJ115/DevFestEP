@@ -15,6 +15,12 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TabGroupDynamicHeightExampleComponent } from './tab-group-dynamic-height-example/tab-group-dynamic-height-example.component';
 import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './login/login.component';
+import { CollaboratorLauncherComponent } from './collaborator-launcher/collaborator-launcher.component';
+import { CollaboratorSignComponent } from './collaborator-sign/collaborator-sign.component';
+import { FunderComponent } from './funder/funder.component';
+import { MemberComponent } from './member/member.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -29,6 +35,11 @@ import { AboutComponent } from './about/about.component';
     SignUpComponent,
     TabGroupDynamicHeightExampleComponent,
     AboutComponent,
+    LoginComponent,
+    CollaboratorLauncherComponent,
+    CollaboratorSignComponent,
+    FunderComponent,
+    MemberComponent,
    
     
     
@@ -40,6 +51,7 @@ import { AboutComponent } from './about/about.component';
     ReactiveFormsModule,
     FormsModule,
     MatTabsModule,
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration(),

@@ -1,0 +1,138 @@
+/* General form styling */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling form elements */
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Textarea specific styling */
+  form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* Submit button styling */
+  form button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  form div *ngIf {
+    color: #ff0000;
+    font-size: 12px;
+  }
+  
+  /* Form container styling */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef1f5;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: gray;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h1 {
+    margin-bottom: 20px;
+  }
+  /* Submit button styling */
+form button {
+    display: inline-block;
+    padding: 10px 20px;          /* Adjusts padding inside the button */
+    font-size: 16px;             /* Sets the font size of the button text */
+    color: #fff;                 /* Text color */
+    background-color: #007bff;  /* Background color */
+    border: none;                /* Removes the default border */
+    border-radius: 4px;         /* Rounds the corners of the button */
+    cursor: pointer;             /* Changes the cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth transition for background color and scaling */
+  }
+  
+  /* Button hover effect */
+  form button:hover {
+    background-color: #0056b3;  /* Darker shade when hovered */
+    transform: scale(1.05);      /* Slightly enlarges the button on hover */
+  }
+  
+  /* Button active effect */
+  form button:active {
+    background-color: #004494;  /* Even darker shade when active */
+    transform: scale(0.95);      /* Slightly shrinks the button when clicked */
+  }
+  
+  /* Disable button style (optional) */
+  form button:disabled {
+    background-color: #ccc;      /* Light gray for disabled state */
+    color: #666;                 /* Dark gray text for disabled state */
+    cursor: not-allowed;         /* Changes cursor to indicate the button is not clickable */
+  }
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  }
+  

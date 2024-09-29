@@ -1,0 +1,23 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .giant-button {
+    font-size: 2rem; /* Adjust font size */
+    padding: 200px 200px; /* Adjust padding */
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .giant-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

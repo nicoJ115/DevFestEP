@@ -6,9 +6,35 @@ import { RoadMapFunderComponent } from './road-map-funder/road-map-funder.compon
 import { RoadMapMemberComponent } from './road-map-member/road-map-member.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AboutComponent } from './about/about.component'; 
+import { LoginComponent } from './login/login.component';
+import { CollaboratorLauncherComponent } from './collaborator-launcher/collaborator-launcher.component';
+import { CollaboratorSignComponent } from './collaborator-sign/collaborator-sign.component';
+import { MemberComponent } from './member/member.component';
+import { FunderComponent } from './funder/funder.component';
 
 const routes: Routes = [
 
+  { 
+    path: 'collaboration', 
+    component: CollaboratorSignComponent
+  },
+  { 
+    path: 'member', 
+    component: MemberComponent
+  },
+
+  { 
+    path: 'funder', 
+    component: FunderComponent
+  },
+  { 
+    path: 'collaboration/type', 
+    component: CollaboratorLauncherComponent
+  },
+  { 
+    path: 'log-in', 
+    component: LoginComponent
+  },
   { 
     path: 'questionaire', 
     component: RoadMapMemberComponent
@@ -21,8 +47,12 @@ const routes: Routes = [
     path: 'roadmap', 
     component: RoadMapFunderComponent
   },
-  { path: 'sign-up', component: SignUpComponent }, 
-  { path: 'about', component: AboutComponent },
+  { path: 'sign-up', 
+    component: SignUpComponent
+  }, 
+  { path: 'about', 
+    component: AboutComponent
+  },
 ];
 
 @NgModule({

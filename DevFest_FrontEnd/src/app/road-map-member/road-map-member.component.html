@@ -3,52 +3,80 @@
 
 <br> 
 <br>
+<!--     
 
+    phone_number = models.CharField(max_length=15, blank=True, null=True)
+    address = models.TextField(blank=True, null=True)
 
-<form (ngSubmit)="onSubmit(f)" #f="ngForm">
-    <div>
-      <label for="bankAccountBalance">How much money do you have in your bank account?</label>
-      <input id="bankAccountBalance" name="bankAccountBalance" ngModel type="number" required />
-    </div>
-  
-    <div>
-      <label for="financialGoal">What is your financial goal for your bank account?</label>
-      <input id="financialGoal" name="financialGoal" ngModel type="number" required />
-    </div>
-  
-    <div>
-      <label for="age">What is your age?</label>
-      <input id="age" name="age" ngModel type="number" required />
-    </div>
-  
-    <div>
-      <label for="profession">What is your profession?</label>
-      <input id="profession" name="profession" ngModel type="text" required />
-    </div>
+    card_info = models.CharField(max_length=255, blank=True, null=True)
+    exDate = models.CharField(max_length=255, blank=True, null=True)
+    cvc =  models.CharField(max_length=255, blank=True, null=True)
 
-    <div>
-        <label>Are you attending or planning to attend college?</label>
+    created_at = models.DateTimeField(default=timezone.now) -->
+
+    <form [formGroup]="financialForm" (ngSubmit)="onSubmit()">
         <div>
-        <label for="attendYes">Yes</label>
-          <input type="radio" id="attendYes" name="collegeAttendance" ngModel value="Yes" required />
+          <label for="username">What will be your username?</label>
+          <input id="username" formControlName="username" type="text" required />
         </div>
+      
         <div>
-        <label for="attendNo">No</label>
-          <input type="radio" id="attendNo" name="collegeAttendance" ngModel value="No" required />
+          <label for="password">What will be your password?</label>
+          <input id="password" formControlName="password" type="password" required />
         </div>
+      
         <div>
-            <label for="attendIdk">I don't know</label>
-            <input type="radio" id="attendIdK" name="collegeAttendance" ngModel value="IDK" required />
+          <label for="gmail">What is your Gmail?</label>
+          <input id="gmail" formControlName="gmail" type="email" required />
         </div>
-    </div>
-  
-    <div>
-      <label for="otherDetails">More about yourself</label>
-      <textarea id="otherDetails" name="otherDetails" ngModel></textarea>
-    </div>
-  
-    <button type="submit" routerLink="/roadmap">Submit</button>
-  </form>
+      
+        <div>
+          <label for="firstName">What is your First Name?</label>
+          <input id="firstName" formControlName="firstName" type="text" required />
+        </div>
+      
+        <div>
+          <label for="lastName">What is your Last Name?</label>
+          <input id="lastName" formControlName="lastName" type="text" required />
+        </div>
+      
+        <div>
+          <label for="age">What is your Age?</label>
+          <input id="age" formControlName="age" type="number" required />
+        </div>
+      
+        <div>
+          <label for="phoneNumber">What is your phone number?</label>
+          <input id="phoneNumber" formControlName="phoneNumber" type="text" required />
+        </div>
+      
+        <div>
+          <label for="address">What is your address?</label>
+          <input id="address" formControlName="address" type="text" required />
+        </div>
+      
+        <!-- Uncomment if needed -->
+        <!--
+        <div>
+          <label for="cardNumber">What is your card Number?</label>
+          <input id="cardNumber" formControlName="cardNumber" type="text" required />
+        </div>
+      
+        <div>
+          <label for="cardExpirationDate">What is your card expiration Date?</label>
+          <input id="cardExpirationDate" formControlName="cardExpirationDate" type="text" required />
+        </div>
+      
+        <div>
+          <label for="cardCVC">What is your card CVC?</label>
+          <input id="cardCVC" formControlName="cardCVC" type="text" required />
+        </div>
+        -->
+      
+        <button type="submit" routerLink="collaboration/type">Submit</button>
+      </form>
+      
+      
   
   
   

@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<br>
+<br>
+
+<form [formGroup]="financialForm" (ngSubmit)="onSubmit()" >
+    <div>
+      <label for="username">What will be your username?</label>
+      <input id="username" formControlName="username" type="text" required />
+    </div>
+  
+    <div>
+      <label for="password">What will be your password?</label>
+      <input id="password" formControlName="password" type="password" required />
+    </div>
+  
+
+  
+    <button type="submit" routerLink="/collaboration/type">Submit</button>
+  </form>
