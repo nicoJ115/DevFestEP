@@ -1,0 +1,32 @@
+.roadmap-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .roadmap-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+  }
+  
+  .roadmap-item {
+    margin-bottom: 20px; /* Space between items */
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.6); /* Softer black border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .roadmap-item h2 {
+    margin: 0 0 10px 0; /* Margin for the step titles */
+  }
+  
+  .roadmap-item p {
+    margin: 0; /* Remove margin for paragraphs */
+  }
+  

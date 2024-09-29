@@ -1,0 +1,39 @@
+<app-header> </app-header>
+
+
+<br> 
+<br>
+
+
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div>
+      <label for="bankAccountBalance">How much money do you have in your bank account?</label>
+      <input id="bankAccountBalance" name="bankAccountBalance" ngModel type="number" required />
+    </div>
+  
+    <div>
+      <label for="financialGoal">What is your financial goal for your bank account?</label>
+      <input id="financialGoal" name="financialGoal" ngModel type="number" required />
+    </div>
+  
+    <div>
+      <label for="age">What is your age?</label>
+      <input id="age" name="age" ngModel type="number" required />
+    </div>
+  
+    <div>
+      <label for="profession">What is your profession?</label>
+      <input id="profession" name="profession" ngModel type="text" required />
+    </div>
+  
+    <div>
+      <label for="otherDetails">More about yourself</label>
+      <textarea id="otherDetails" name="otherDetails" ngModel></textarea>
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
+  
+  
+  
