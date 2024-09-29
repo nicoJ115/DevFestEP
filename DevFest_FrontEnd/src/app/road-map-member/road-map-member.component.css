@@ -96,6 +96,38 @@ form {
   .container h1 {
     margin-bottom: 20px;
   }
+  /* Submit button styling */
+form button {
+    display: inline-block;
+    padding: 10px 20px;          /* Adjusts padding inside the button */
+    font-size: 16px;             /* Sets the font size of the button text */
+    color: #fff;                 /* Text color */
+    background-color: #007bff;  /* Background color */
+    border: none;                /* Removes the default border */
+    border-radius: 4px;         /* Rounds the corners of the button */
+    cursor: pointer;             /* Changes the cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth transition for background color and scaling */
+  }
+  
+  /* Button hover effect */
+  form button:hover {
+    background-color: #0056b3;  /* Darker shade when hovered */
+    transform: scale(1.05);      /* Slightly enlarges the button on hover */
+  }
+  
+  /* Button active effect */
+  form button:active {
+    background-color: #004494;  /* Even darker shade when active */
+    transform: scale(0.95);      /* Slightly shrinks the button when clicked */
+  }
+  
+  /* Disable button style (optional) */
+  form button:disabled {
+    background-color: #ccc;      /* Light gray for disabled state */
+    color: #666;                 /* Dark gray text for disabled state */
+    cursor: not-allowed;         /* Changes cursor to indicate the button is not clickable */
+  }
+  
   
   /* Media Queries for Responsiveness */
   @media (max-width: 600px) {

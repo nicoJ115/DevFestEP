@@ -32,6 +32,7 @@ export class RoadMapMemberComponent implements OnInit{
     const age = form.value.age;
     const profession = form.value.profession;
     const otherDetails = form.value.otherDetails;
+    const collegeAttendance = form.value.collegeAttendance;
 
     // Do something with these values, such as sending them to a server
     console.log("Bank Account Balance:", bankAccountBalance);
@@ -39,6 +40,7 @@ export class RoadMapMemberComponent implements OnInit{
     console.log("Age:", age);
     console.log("Profession:", profession);
     console.log("Other Details:", otherDetails);
+    console.log("College Attendance:", collegeAttendance);
   }
 
 }

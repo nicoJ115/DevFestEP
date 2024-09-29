@@ -25,6 +25,22 @@
       <label for="profession">What is your profession?</label>
       <input id="profession" name="profession" ngModel type="text" required />
     </div>
+
+    <div>
+        <label>Are you attending or planning to attend college?</label>
+        <div>
+        <label for="attendYes">Yes</label>
+          <input type="radio" id="attendYes" name="collegeAttendance" ngModel value="Yes" required />
+        </div>
+        <div>
+        <label for="attendNo">No</label>
+          <input type="radio" id="attendNo" name="collegeAttendance" ngModel value="No" required />
+        </div>
+        <div>
+            <label for="attendIdk">I don't know</label>
+            <input type="radio" id="attendIdK" name="collegeAttendance" ngModel value="IDK" required />
+        </div>
+    </div>
   
     <div>
       <label for="otherDetails">More about yourself</label>
